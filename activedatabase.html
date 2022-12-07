@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html>
 
+<html>
 <title>Active Pothole Database</title>
 
+<link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
+<link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
+<link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
+<script src = "database.js"></script>
+
 <head>
-<!--
-<style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 10px;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-    </style>
--->
     
 </head>
-<body>
-
+<body onload = "putintodatabase()">
   <div class="topnav">
     <h3>
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="report.html">Report Page</a>
     <a href="activedatabase.html">Active Database</a>
     <a href="contact.html">Contact</a>
@@ -38,55 +22,23 @@
   </div>
 <h2>Active Reports Database</h2>
 
-<table>
+<div style="overflow-x: auto;">
+<table id = "myTable">
   <tr>
     <th>Location</th>
-    <th>Picture</th>
     <th>Size Estimate</th>
     <th>Comments</th>
     <th>Date Posted</th>
   </tr>
   <tr>
     <td>Washington St., 3rd St., 4th St.</td>
-    <td><img src="pothole.jpg" alt="Pothole" width= "200px" height= "200px"></td>
     <td>4ft by 4ft</td>
     <td>This pothole is really bothering me. Every day I drive on Washington to drop my kids off at school and always have to avoid this pothole! Kinda looks like Texas though!</td>
-    <td>2022-010-31 <time>15:00</time> </td>
-  </tr>
-  <tr>
-    <td><br><br><br></td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td><br><br><br></td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td><br><br><br></td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td><br><br><br></td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td><br><br><br></td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-    
+    <td>10/31/2022 @ <time>15:00:00</time> </td>
   </tr>
 </table>
-
+</div>
+<input type="color" id="colorInputColor">
+<input type="button" id="ColorButton" value="Click to change color of backround" onclick ="changeColor()">
 </body>
 </html>
-
-
