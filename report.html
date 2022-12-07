@@ -3,11 +3,16 @@
 
 <title>Report a Pothole</title>
 
+<link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
+<link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
+<link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
+<script src = "database.js"></script>
+
 <body>
 
   <div class="topnav">
     <h3>
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="report.html">Report Page</a>
     <a href="activedatabase.html">Active Database</a>
     <a href="contact.html">Contact</a>
@@ -17,27 +22,23 @@
 
 <h2>Pothole Reporter</h2>
 
-<form action="/action_page.php">
+<form action="activedatabase.html">
   <label for="fname">On Street*:</label><br>
-  <input type="text" id="fname" name="fname" placeholder="Washington Street" required><br><br>
+  <input type="text" id="onstreet" placeholder="Washington Street" required><br><br>
   <label for="lname">From Street*:</label><br>
-  <input type="text" id="lname" name="lname" placeholder ="3rd Street"required><br><br>
+  <input type="text" id="fstreet" placeholder ="3rd Street"required><br><br>
    <label for="lname">To Street*:</label><br>
-  <input type="text" id="lname" name="lname" placeholder ="4th street" required><br><br>
-  <label for="fname">Image:</label><br>
-  <input type="file" id="fname" name="fname" placeholder ="John"><br><br>
+  <input type="text" id="tstreet" placeholder ="4th Street" required><br><br>
   <label for="lname">Approximate Size*:</label><br>
-  <input type="text" id="lname" name="lname" placeholder ="4 feet by 4 feet" required><br><br>
-  <label for="lname">Comments:</label><br>
-  <input type="text" id="lname" name="lname"><br>
+  <input type="text" id="size" placeholder ="4 feet by 4 feet" required><br><br>
+  <label for="lname">Additional Comments:</label><br>
+  <input type="text" id="comments"><br>
   <p>* = Required</p>
-  <input type="submit" value="Submit"><br><br>
+  <input onclick = "getdata()" type="submit" value="Submit"><br><br>
   
-      <h3><a href="activedatabase.html">View Pothole Database</a></h3>
+  <h3><a href="activedatabase.html">View Pothole Database</a></h3>
   
 </form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
 </body>
 </html>
