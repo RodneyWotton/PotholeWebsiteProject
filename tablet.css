@@ -1,0 +1,143 @@
+body {
+
+    margin: 0;
+    font-family: "Comic Sans", "Trebuchet MS", sans-serif
+    }
+    
+    .topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    font-family: "Monaco", "Lucida Console", monospace;
+    }
+    
+    .topnav a {
+    float: left;
+    color:rgb(255, 0, 0);
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav a:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    }
+    
+    .topnav a.active {
+    background-color: salmon;
+    color: white;
+    }
+
+    .backround {
+    background-image: url("images/background.jpg");
+    
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+        
+    }
+    
+
+    body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+           
+      }
+
+    .names {
+        text-align:center
+      }
+    
+    h2 {
+        text-align:center
+    }
+
+    h3 {
+        text-align:center
+    }
+
+    p {
+        text-align:center
+    }
+
+    .headquarters {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:100%;
+        width:fit-content
+    }
+
+    .infront{
+        z-index: 0;
+    }
+
+    form {
+        text-align:center
+    }
+
+    .logo {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:100%;
+        width:fit-content
+    }
+
+    
+    .featuredimage {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:100%;
+        width:fit-content
+
+    }
+    
+    .voting_mechanism {
+        text-align: center
+
+       
+    }
+    .box{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    background-color: lightblue;
+    }
+    
+    table, th, td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid;
+      }
+
+    th {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        width: 20vw
+    }
+
+    input {
+        border: 2px solid red;
+        border-radius: 4px;
+      }
+
+    
+
+    form {
+        width: 100%;
+    }
+
+    .homepagefull {
+        background-color:rgb(255, 255, 255)
+    }
+
+    
+
+   
