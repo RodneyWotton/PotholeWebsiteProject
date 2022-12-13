@@ -1,18 +1,15 @@
-<!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Home</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
-    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
-    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
-    </head>
-    
-    <body>
-    <div class="homepagefull">
-    
+<head>
+<title>Active Pothole Database</title>
+
+<link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
+<link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
+<link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
+<script src = "database.js"></script>   
+</head>
+
+<body onload = "putintodatabase()">
     <nav class="topnav">
       <h3>
         <div class="dropdown">
@@ -52,7 +49,7 @@
   </tr>
 </table>
 </div>
-<input type="color" id="colorInputColor">
+<input type="color" id="colorInputColor" onchange ="changeColor()">
 <input type="button" id="ColorButton" value="Click to change color of backround" onclick ="changeColor()">
 </body>
 </html>

@@ -190,5 +190,11 @@ body {
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
+      .headquarters_activation {
+        text-align:center
+        
+
+      }
     
    

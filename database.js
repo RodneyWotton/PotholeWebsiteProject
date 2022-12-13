@@ -28,6 +28,7 @@ function getdata(){
 }
 
 function putintodatabase(){
+    
     var table = document.getElementById("myTable");
 
     var i = 0;
@@ -57,4 +58,12 @@ function putintodatabase(){
 function changeColor(){
     let color = document.getElementById('colorInputColor').value
     document.body.style.backgroundColor = color;
+}
+
+function headquarters_appear(){
+    document.getElementById('headquarters').style.visibility="visible"
+    } 
+
+function headquarters_disappear(){
+    document.getElementById('headquarters').style.visibility="hidden"
 }

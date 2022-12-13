@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>S</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
-    <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
-    <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
-    </head>
-    
-    <body>
-    <div class="homepagefull">
 
-    <nav class="topnav">
-      <h3>
-        <div class="dropdown">
-          <button class="dropbtn"> 
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="report.html">Report Page</a>
-            <a href="activedatabase.html">Active Database</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>         
-          </div>
+<head>
+  <title>About Us</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="desktops.css" rel="stylesheet" media="screen and (min-width:769px)"/>
+  <link href="tablet.css" rel="stylesheet" media="screen and (min-width:481px) and (max-width:768px)"/>
+  <link href="mobile.css" rel="stylesheet" media="screen and (max-width:480px)"/>
+  <script src = "database.js"></script>
+
+  </head>
+  
+  <body>
+  <div class="homepagefull">
+  <nav class="topnav">
+    <h3>
+      <div class="dropdown">
+        <button class="dropbtn"> 
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        </button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="report.html">Report Page</a>
+          <a href="activedatabase.html">Active Database</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>         
         </div>
-        <a href="index.html">Home</a>
-        <a href="report.html">Report Page</a>
-        <a href="activedatabase.html">Active Database</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </h3>
-    </nav>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="report.html">Report Page</a>
+      <a href="activedatabase.html">Active Database</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </h3>
+  </nav>
 
-
+<body>
 <h2>About Us</h2>
 
 <p>Our department was created to help the average working American. Our pothole fixing website would mainly affect people who drive or commute often. </p>
@@ -60,12 +62,15 @@
 
 </body>
 
-
+<div class="headquarters_activation">
+  <input type="button" id="headquarters_activate" value="Click to make the image appear." onclick ="headquarters_appear()">
+  <input type="button" id="headquarters_deactivate" value="Click to make the image disappear." onclick ="headquarters_disappear()">
+  </div>
+  <br>
 <div class="headquarters">
-<picture>
+<picture id="headquarters">
   <source media="(min-width:960px)" srcset="images/howe_center_large.jpg">
   <source media="(min-width:481px)" srcset="images/howe_center_medium.jpg">
   <img alt="Pothole Fixers HQ" srcset="images/howe_center_small.jpg">
 </picture>
 </div>
-</html>
